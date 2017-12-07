@@ -1,8 +1,18 @@
 {
-  "name": "Project Name",
+  "name": "intergalactic-scholarly",
   "version": "0.0.1",
   "description": "A review time project",
   "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Josh Luria",
+    "email": "josh.luria@gmail.com",
+    "url": "https://github.com/jluria"
+  },
+  "bugs": {
+    "url": "https://github.com/jluria/senior-enrichment/issues"
+  },
+  "homepage": "https://github.com/jluria/senior-enrichment",
   "scripts": {
     "start:dev": "webpack -w & nodemon main",
     "start": "node main"
@@ -10,7 +20,9 @@
   "keywords": [
     "react",
     "redux",
-    "skeleton"
+    "skeleton",
+    "education",
+    "interplanetary"
   ],
   "dependencies": {
     "body-parser": "^1.15.2",
