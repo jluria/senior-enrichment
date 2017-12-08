@@ -2,6 +2,7 @@
 
 const db = require('../index');
 const Student = require('./student');
+const Campus = require('./campus');
 
 // Require all the models
 	// Running each model (i.e. table) module (i.e. file) registers each model into our sequelize db
@@ -12,5 +13,6 @@ const Student = require('./student');
 
 module.exports = {
   db,
-  Student
+  Student,
+  Campus
 };
