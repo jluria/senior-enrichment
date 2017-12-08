@@ -17,5 +17,10 @@ module.exports = db.define('student', {
       isEmail: true
     }
   },
-  gpa: Sequelize.FLOAT(1, 1)
+  gpa: {
+    type: Sequelize.DECIMAL(2, 1),
+    isDecimal: true,
+    max: 4.0,
+    min: 0.0
+  }
 });
