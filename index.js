@@ -1,4 +1,4 @@
-'use strict'
+/*'use strict'
 const chalk = require('chalk')
 const pkg = require('./package.json')
 
@@ -20,4 +20,4 @@ if (!reasonableName.test(pkg.name)) {
   console.error(chalk.red(nameError))
 }
 
-module.exports = pkg
+module.exports = pkg*/
