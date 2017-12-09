@@ -7,12 +7,6 @@ import Home from './Home';
  */
  
 export default class Dashboard extends Component {
-  constructor() {
-    super()
-  }
-
-  componentDidMount() {
-  }
 
   render() {
     return (

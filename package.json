@@ -8,6 +8,7 @@
     "url": "https://github.com/jluria/senior-enrichment/issues"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "body-parser": "^1.15.2",
     "chalk": "^1.1.3",
     "express": "^4.14.0",
