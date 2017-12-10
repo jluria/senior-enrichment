@@ -8,4 +8,11 @@ router.get('/', (req, res, next) => {
     .catch(next);
 })
 
+// Route for getting a campus by its id
+router.get('/:campusId', (req, res, next) => {
+  Campus.findById(req.params.campusId)
+    .then(campus => res.json(campus))
+    .catch(next);
+})
+
 module.exports = router;
