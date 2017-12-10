@@ -11,10 +11,10 @@ export default class Dashboard extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
-        <Home />
-      </div>
+        <div>
+          <Navbar />
+          <Home />
+        </div>
     )
   }
 }

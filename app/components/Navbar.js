@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
@@ -8,8 +9,12 @@ class Navbar extends Component {
           <h1>Intergalactic Scholarly</h1>
         </div>
         <div className='navbar-child'>
-          <button>Home</button>
-          <button>Students</button>
+          <Link to='/'>
+            <button>Home</button>
+          </Link>
+          <Link to='/students'>
+            <button>Students</button>
+          </Link>
         </div>
       </div>
     )

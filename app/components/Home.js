@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import AllCampuses from './AllCampuses';
 import AllStudents from './AllStudents';
 
 const Home = () => {
     return(
       <div>
-        <h1>Hello errybody!</h1>
-        <AllCampuses />
-        <AllStudents />
+        <Switch>
+          <Route exact path="/" component={AllCampuses} />
+          <Route path="/students" component={AllStudents} />
+        </Switch>
       </div>
     );
 };
