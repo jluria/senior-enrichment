@@ -23,4 +23,10 @@ module.exports = db.define('student', {
     max: 4.0,
     min: 0.0
   }
+}, {
+  getterMethods: {
+    fullName() {
+      return this.firstName + ' ' + this.lastName
+    }
+  }
 });

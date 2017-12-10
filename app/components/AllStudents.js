@@ -16,7 +16,7 @@ class AllStudents extends Component {
               this.props.students.map(student => {
                 return (
                   <li key={student.id}>
-                    <span>{student.firstName}</span>
+                    <span>{student.fullName}</span>
                   </li>
                 );
               })
