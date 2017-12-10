@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+}
+
+#application-name {
+  flex: 3;
+}
+
+.navbar-child {
+  flex: 1;
+}
