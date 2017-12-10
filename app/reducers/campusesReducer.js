@@ -27,7 +27,7 @@ export default function reducer (state = [], action) {
   switch (action.type) {
     case GET_CAMPUSES:
       return action.campuses;
-    default:
+   default:
       return state;
   }
 
