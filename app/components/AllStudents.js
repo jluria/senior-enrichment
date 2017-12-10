@@ -11,6 +11,7 @@ class AllStudents extends Component {
     if (this.props.students) {
       return(
         <div>
+          <h2>All Enrolled Students</h2>
           <ul>
             {
               this.props.students.map(student => {

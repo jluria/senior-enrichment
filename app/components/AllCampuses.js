@@ -11,6 +11,7 @@ class AllCampuses extends Component {
     if (this.props.campuses) {
       return(
         <div>
+          <h2>All Campuses</h2>
           <ul>
             {
               this.props.campuses.map(campus => {
