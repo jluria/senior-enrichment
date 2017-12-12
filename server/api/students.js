@@ -8,4 +8,11 @@ router.get('/', (req, res, next) => {
     .catch(next);
 })
 
+// Route for getting a student by its id
+router.get('/:studentId', (req, res, next) => {
+  Student.findById(req.params.studentId, { include: [{ all: true }] })
+    .then(student => res.json(student))
+    .catch(next);
+})
+
 module.exports = router;
