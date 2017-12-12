@@ -13,21 +13,17 @@ class AllCampuses extends Component {
       return(
         <div>
           <h2>All Campuses</h2>
-          <ul>
             {
               this.props.campuses.map(campus => {
                 return (
                   <div key={campus.id}>
                     <Link to={"/campuses/" + campus.id} >
-                      <li>
-                        <span>{campus.name}</span>
-                      </li>
+                      <span>{campus.name}</span>
                     </Link>
                   </div>
                 );
               })
             }
-          </ul>
         </div>
       )
     }

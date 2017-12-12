@@ -5,7 +5,7 @@ const GET_CAMPUSES = 'GET_CAMPUSES';
 
 //Action Creators
 export function getCampuses (campuses) {
-  const action = { type: GET_CAMPUSES, campuses};
+  const action = { type: GET_CAMPUSES, campuses };
   return action;
 }
 
