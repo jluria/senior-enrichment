@@ -22,6 +22,14 @@ export function fetchCampus (dispatch, campusId) {
   };
 }
 
+export function deleteCampus (dispatch, campusId) {
+  return function thunk () {
+    return axios.delete('/api/campuses/' + campusId + '/delete')
+      .then()
+      .catch(console.error)
+  };
+}
+
 // Reducer
 export default function reducer (state = {}, action) {
   switch (action.type) {

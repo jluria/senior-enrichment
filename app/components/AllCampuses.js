@@ -20,6 +20,7 @@ class AllCampuses extends Component {
                     <Link to={"/campuses/" + campus.id} >
                       <span>{campus.name}</span>
                     </Link>
+                    <button className='delete-btn' onClick={this.props.handlClick(campus.id)} >x</button>
                   </div>
                 );
               })
@@ -40,6 +41,9 @@ function mapDispatchToProps(dispatch) {
   return {
     loadCampuses: function () {
       dispatch(fetchCampuses());
+    },
+    handleClick: function (campusId) {
+      dispatch(deleteCampus(dispatch, campusId));
     }
   }
 }
